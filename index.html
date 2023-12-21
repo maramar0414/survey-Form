@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nanny services Form</title>
+    <link rel="stylesheet" href="styles.css" />
+   
+     </head>
+<body>
+ <div class="background-image"></div>
+    <h1 id="title">Nanny services Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+   <fieldset>
+    <fieldset>
+      <legend>Personal info</legend>
+      <label id="name-label">Name: <input id="name"type="text" required placeholder="Full name" inline></label>
+      <label id="email-label">Email:<input id="email" type="email" required placeholder="youremail@here.com"></label>
+      <label id="number-label">Age:<input id="number" type="number" required placeholder="years" min="0" max="4"></label>
+    </fieldset>
+    <fieldset>
+      <legend>Hours required</legend>
+      <select id="dropdown" required>
+      <option></option>
+      <option>less 2</option>
+      <option>2 to 4</option> 
+      <option>+4</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Work place</legend>
+            <label><input id="work-place" type="radio" name="attribute" value="family-house" class="inline" >Family house </label>
+            <label><input id="work-place" type="radio" name="attribute" value="Somewhere-else" class="inline" >Somewhere else</label>
+    </fieldset>
+    <fieldset>
+      <legend>Extras required:</legend>
+            <label for="breakfast"><input id="breakfast" type="checkbox" name="extras" value="attribute" class="inline"> Breakfast</label>
+            <label for="Lunch"><input id="lunch" type="checkbox" name="extras" value="attribute"class="inline"> Lunch</label>
+            <label for="snacks"><input id="snacks" type="checkbox" name="extras" value="attribute"class="inline"> Snacks</label>
+    </fieldset>
+    <fieldset>
+      <legend for="others">Comments:</legend> 
+       <textarea id="others" rows="3" cols="30" placeholder="allergies, nap times..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+</body>
+</html>
